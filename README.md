@@ -24,7 +24,7 @@ class MinhaVida {
   
 };
 
-new MinhaVida("Café!");
+new MinhaVida("Café");
 ```
 <img src="https://komarev.com/ghpvc/?username=Carnage-ctrl&color=red" alt="Carnage-ctrl" /> 
 
