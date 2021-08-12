@@ -1,30 +1,13 @@
 <h2> Olá, eu sou o Diego!</h2><img src="https://komarev.com/ghpvc/?username=Carnage-ctrl&color=red" alt="Carnage-ctrl" /> 
 
 ```typescript
-import express from 'express';
+/* @ts-check */
 
-class MinhaVida {
-  /* Específicações da minha vida */
-  public vida: express.Application;
-  public PORT: any | number = 8080;
-  public pensamento: string;
-  
-  constructor(pensamento_do_dia: string) {
-    this.vida = express();
-    this.pensamento = pensamento_do_dia;
-    this.startMyLife();
-  };
-  
-  startMyLife(): void {
-    this.vida.listen(this.PORT, () => console.log("Diego iniciado..."));
-    setTimeout(() => {
-    	console.log(`Pensamento do dia: ${this.pensamento}!`);
-    }, 1000)
-  };
-  
+export async function MinhaVida(pensamento_do_momento: string) {
+    return console.log(`No momento eu desejo apenas ${pensamento_do_momento}!`);
 };
 
-new MinhaVida("Café");
+MinhaVida("Café");
 ```
 
 <p align="left">
