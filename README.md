@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
     
     gtk_widget_show_all(Window);
     gtk_widget_show_all(Button);
+    gtk_container_add(GTK_CONTAINER(Window), Button);
     g_signal_connect(G_OBJECT(Button), "clicked", G_CALLBACK(ExibirUmaVerdade), NULL);
     
     gtk_main();
