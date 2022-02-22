@@ -1,13 +1,41 @@
 <h2> Olá, eu sou o Diego!</h2><img src="https://komarev.com/ghpvc/?username=Carnage-ctrl&color=red" alt="Carnage-ctrl" /> 
 
-```typescript
-/* @ts-check */
+```C
+#include <gtk/gtk.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-export async function MinhaVida(pensamento_do_momento: string) {
-    return console.log(`No momento eu desejo apenas ${pensamento_do_momento}!`);
-};
+GtkWidget* Window;
+GtkWidget* Button;
+GtkWidget* Dialog;
 
-MinhaVida("Café");
+static void ExibirUmaVerdade();
+
+int main(int argc, char *argv[])
+{
+    gtk_init(&argc, &argv);
+    
+    Window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    Button = gtk_button_new_with_label("Mostrar uma verdade");
+    Dialog = gtk_message_dialog_new(
+        NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_OK, "Nada é melhor do que C!"
+    );
+    
+    gtk_widget_show_all(Window);
+    gtk_widget_show_all(Button);
+    g_signal_connect(G_OBJECT(Button), "clicked", G_CALLBACK(ExibirUmaVerdade), NULL);
+    
+    gtk_main();
+    
+    return 0;
+}
+
+static void ExibirUmaVerdade()
+{
+    gtk_dialog_run(GTK_DIALOG(Dialog));
+    gtk_widget_destroy(Dialog);
+}
+
 ```
 
 <p align="left">
