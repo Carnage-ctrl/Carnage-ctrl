@@ -20,6 +20,6 @@ MinhaVida("Café");
 <code><img width="40" src="https://img.icons8.com/color/452/javascript--v1.png"></code>
 <code><img width="40" src="https://img.icons8.com/color/452/typescript.png"></code>
 <code><img width="40" src="https://iconarchive.com/download/i99610/blackvariant/button-ui-requests-6/iTerm.ico"></code>
-<code><img width="40" src="https://img.icons8.com/color/452/c-plus-plus-logo.png"></code>
+<code><img width="40" src="https://nareshit.com/wp-content/uploads/2018/08/C-Programming-online-training-nareshit.jpg"></code>
 <code><img width="40" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"></code>
 
